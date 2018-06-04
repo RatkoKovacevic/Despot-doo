@@ -5,10 +5,10 @@
 
 :root {
     --blue: linear-gradient( to right, #2E5894, #0066FF);
-    --gold: linear-gradient( to right, #daa628, #9c7c38);
+    --gold: linear-gradient( to right, #9c7c38, #daa628);
     --gray: #c6c6c5;
     --white: #f6f6f6;
-    --red: linear-gradient(to right, #BF4F51, #9C2542);
+    --red: linear-gradient(to right, #9C2542, #BF4F51);
 }
 
 body,
@@ -211,15 +211,14 @@ label {
 }
 
 form {
-    margin: 0 auto;
-    width: 459px;
+    width: 460px;
 }
 
 input,
 textarea {
     width: 439px;
     height: 27px;
-    background: #efefef;
+    background: var(--white);
     border: 1px solid #dedede;
     padding: 10px;
     margin-top: 3px;
@@ -229,14 +228,14 @@ textarea {
 
 textarea {
     height: 213px;
-    background-color: #efefef;
+    background-color: var(--white);
 }
 
 input,
 textarea {
     width: 439px;
     height: 27px;
-    background: #efefef;
+    background: var(--white);
     border: 1px solid #dedede;
     padding: 10px;
     margin-top: 3px;
@@ -247,20 +246,24 @@ textarea {
     border-radius: 5px;
 }
 
+#message {
+    height: 250px;
+}
+
 input:focus,
 textarea:focus {
     border: 1px solid #97d6eb;
 }
 
 #submit {
-    width: 127px;
-    height: 38px;
     background-image: var(--blue);
-    text-indent: -9999px;
-    border: none;
-    margin: 20px 0;
-    cursor: pointer;
     color: var(--white);
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: none;
+    margin: 20px 0;
 }
 
 #submit:hover {
