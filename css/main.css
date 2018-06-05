@@ -195,6 +195,10 @@ footer a {
     text-align: left;
 }
 
+footer p {
+    padding: 10px 0 0 40px;
+}
+
 /* Katalog */
 
 #flipbook {
@@ -278,11 +282,15 @@ textarea:focus {
     .podaci {
         grid-template-columns: repeat(2, auto);
     }
+    nav a{
+        padding: 10px;
+    }
 }
 
 @media (max-width: 768px) {
     nav {
-        display: none;
+        background-image: var(--blue);
+        width: 100%;
     }
     .logo {
         width: 100%;
