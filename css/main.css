@@ -207,73 +207,14 @@ footer p {
 }
 
 /* Contact */
-
-label {
-    display: block;
-    margin-top: 20px;
-    letter-spacing: 2px;
+#contact ul {
+    list-style: none;
 }
 
-form {
-    width: 460px;
+#contact li {
+    font-weight: 700;
+    
 }
-
-input,
-textarea {
-    width: 439px;
-    height: 27px;
-    background: var(--white);
-    border: 1px solid #dedede;
-    padding: 10px;
-    margin-top: 3px;
-    font-size: 0.9em;
-    color: #3a3a3a;
-}
-
-textarea {
-    height: 213px;
-    background-color: var(--white);
-}
-
-input,
-textarea {
-    width: 439px;
-    height: 27px;
-    background: var(--white);
-    border: 1px solid #dedede;
-    padding: 10px;
-    margin-top: 3px;
-    font-size: 0.9em;
-    color: #3a3a3a;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-#message {
-    height: 250px;
-}
-
-input:focus,
-textarea:focus {
-    border: 1px solid #97d6eb;
-}
-
-#submit {
-    background-image: var(--blue);
-    color: var(--white);
-    height: 50px;
-    width: 100px;
-    font-size: 15px;
-    font-weight: bold;
-    text-shadow: none;
-    margin: 20px 0;
-}
-
-#submit:hover {
-    opacity: .9;
-}
-
 /* Queries */
 
 @media (min-width: 1200px) {}
