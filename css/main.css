@@ -25,7 +25,7 @@ p {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     padding: 0;
     margin: 0 auto;
 }
@@ -136,7 +136,6 @@ nav li:hover {
 .container-grid {
     background-image: var(--blue);
     display: grid;
-    grid-gap: 5%;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     color: var(--white);
@@ -174,11 +173,28 @@ nav li:hover {
     padding: 40px;
 }
 
+/* Katalog */
+
+#katalog h1,
+h3 {
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.single-katalog img {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+}
+
 /* Footer */
 
 footer ul {
     list-style: none;
-    padding: 10px 0 5px 40px
+    padding: 10px 0 5px 40px;
 }
 
 footer h3 {
@@ -207,14 +223,25 @@ footer p {
 }
 
 /* Contact */
+
 #contact ul {
     list-style: none;
+    padding-left: 30px;
 }
 
 #contact li {
     font-weight: 700;
-    
+    font-size: 22px;
+    letter-spacing: 1.1;
 }
+
+/* Map */
+
+#map{
+    height: 487px;
+    width: 100%;
+}
+
 /* Queries */
 
 @media (min-width: 1200px) {}
@@ -223,12 +250,25 @@ footer p {
     .podaci {
         grid-template-columns: repeat(2, auto);
     }
-    nav a{
+    nav a {
         padding: 10px;
+    }
+    .show {
+        display: none;
+    }
+    .hide {
+        display: block;
+    }
+    .hide img {
+        width: 100%;
+        height: auto;
     }
 }
 
 @media (max-width: 768px) {
+    .podaci {
+        grid-template-columns: repeat(1, auto);
+    }
     nav {
         background-image: var(--blue);
         width: 100%;
@@ -247,5 +287,15 @@ footer p {
     }
     .top-container {
         grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
+    }
+    .show {
+        display: none;
+    }
+    .hide {
+        display: block;
+    }
+    .hide img {
+        width: 100%;
+        height: auto;
     }
 }
