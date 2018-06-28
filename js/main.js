@@ -50,7 +50,7 @@ function initMap() {
     });
     // Vrh grada
     addMarker({
-        lat: 43.811289,
+        lat:43.811289, 
         lng: 18.999357
     });
     addMarker({
