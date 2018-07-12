@@ -21,13 +21,14 @@ html {
 }
 
 p {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .container {
     width: 90%;
     padding: 0;
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .podaci {
@@ -97,6 +98,7 @@ nav li:hover {
     background-size: cover;
     background-position: center;
     padding: 3rem;
+    box-shadow: 10px 10px 5px grey;
 }
 
 /* Top Box */
@@ -106,6 +108,7 @@ nav li:hover {
     align-items: center;
     justify-items: center;
     padding: 10px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .top-box-a {
@@ -129,6 +132,12 @@ nav li:hover {
     font-weight: 700;
     text-decoration: none;
     color: var(--white);
+    border: 2px solid #9C2542;
+}
+
+.top-box-b a:hover {
+    background: transparent;
+    border: 2px solid #daa628;
 }
 
 /* icons*/
@@ -237,7 +246,7 @@ footer p {
 
 /* Map */
 
-#map{
+#map {
     height: 487px;
     width: 100%;
 }

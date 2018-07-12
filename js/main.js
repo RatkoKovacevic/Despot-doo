@@ -1,3 +1,4 @@
+// Trun katalog
 $(document).ready(function () {
     $("#flipbook").turn({
         width: 1200,
@@ -13,7 +14,7 @@ $(document).ready(function () {
             $('#flipbook').turn('next');
     });
 });
-
+//Map
 function initMap() {
     let options = {
         zoom: 14,
@@ -50,7 +51,7 @@ function initMap() {
     });
     // Vrh grada
     addMarker({
-        lat:43.811289, 
+        lat: 43.811289,
         lng: 18.999357
     });
     addMarker({
